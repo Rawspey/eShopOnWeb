@@ -76,7 +76,7 @@ jobs:
       uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        auth-type: 'sp'
+        auth-type: 'SERVICE_PRINCIPAL'
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
